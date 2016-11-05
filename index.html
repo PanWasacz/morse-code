@@ -9,14 +9,19 @@
     function myfun() {
       submit1 = document.getElementById('submit1').value;
       document.getElementById('submit1').value = "okey";
-      document.getElementById('t1').value = "szanuj wojtka";
+      document.getElementById('text1').value = "szanuj wojtka";
       alert(x);
     }
   </script>
 </head>
 
   <body>
-    <input type="text" value="" id="t1">
+    <input type="text" value="" id="text1"> 
+    <br>
     <input type="submit" value="ok!" id="submit1" onclick="myfun()">
+    <input type="submit" value="oki" id="sumbit2">
+    <br>
+    <input type="text" value="HAHA" id="text2" onclick="myfun1()">
+
   </body>
 </html>
