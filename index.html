@@ -8,20 +8,20 @@
   <script type="text/javascript">
     function myfun() {
       submit1 = document.getElementById('submit1').value;
-      document.getElementById('submit1').value = "okey";
-      document.getElementById('text1').value = "szanuj wojtka";
-      alert(x);
+      x = document.getElementById('text1').value;
+      document.getElementById('text2').value = x;
+
     }
   </script>
 </head>
 
   <body>
-    <input type="text" value="" id="text1"> 
+    <input type="text" name="text1" value="szanuj wojtka" id="text1"> 
     <br>
-    <input type="submit" value="ok!" id="submit1" onclick="myfun()">
-    <input type="submit" value="oki" id="sumbit2">
+    <input type="submit" value="code" id="submit1" onclick="myfun()">
+    <input type="submit" value="decode" id="sumbit2">
     <br>
-    <input type="text" value="HAHA" id="text2" onclick="myfun1()">
+    <input type="text" name="text2" value="HAHA" id="text2">
 
   </body>
 </html>
