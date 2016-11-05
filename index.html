@@ -8,22 +8,15 @@
   <script type="text/javascript">
     function myfun() {
       submit1 = document.getElementById('submit1').value;
-      alert('myfun ' + submit1);
       document.getElementById('submit1').value = "okey";
+      document.getElementById('t1').value = "szanuj wojtka";
+      alert(x);
     }
   </script>
 </head>
 
   <body>
-
-    <form>
-      
-      <textarea name="t1"></textarea>
-      <br>
-
-    </form>
-
+    <input type="text" value="" id="t1">
     <input type="submit" value="ok!" id="submit1" onclick="myfun()">
-
   </body>
 </html>
