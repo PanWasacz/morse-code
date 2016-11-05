@@ -6,20 +6,23 @@
   <meta charset= "UTF-8">
 
   <script type="text/javascript">
-    function myfun() {
-      submit1 = document.getElementById('submit1').value;
+    function code() {
       x = document.getElementById('text1').value;
       document.getElementById('text2').value = x;
-
     }
+    function decode() { 
+    z = document.getElementById('text2').value;
+    document.getElementById('text1').value = z;
+    }
+
   </script>
 </head>
 
   <body>
     <input type="text" name="text1" value="szanuj wojtka" id="text1"> 
     <br>
-    <input type="submit" value="code" id="submit1" onclick="myfun()">
-    <input type="submit" value="decode" id="sumbit2">
+    <input type="submit" value="code" id="submit1" onclick="code()">
+    <input type="submit" value="decode" id="sumbit2" onclick="decode()">
     <br>
     <input type="text" name="text2" value="HAHA" id="text2">
 
