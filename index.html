@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>SUPER PROGRAM</title>
+  <meta charset= "UTF-8">
+
+  <script type="text/javascript">
+    function myfun() {
+      submit1 = document.getElementById('submit1').value;
+      alert('myfun ' + submit1);
+      document.getElementById('submit1').value = "okey";
+    }
+  </script>
+</head>
+
+  <body>
+
+    <form>
+      
+      <textarea name="t1"></textarea>
+      <br>
+
+    </form>
+
+    <input type="submit" value="ok!" id="submit1" onclick="myfun()">
+
+  </body>
+</html>
