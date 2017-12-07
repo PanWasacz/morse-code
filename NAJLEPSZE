@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>SUPER PROGRAM</title>
+  <meta charset= "UTF-8">
+
+  <script type="text/javascript">
+
+    letters = "abcdefghijklmnoprstuwvxyz ";
+    mors_codes = ['.-', '-...', '-.-.', '-..', '.', '..-.', '-..', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '.-.', '...', '-', '..-', '.--', '...-', '-..-','-.-', '--..', '/ '];
+
+    // alert(mors_codes.indexOf('-.-.'));
+    
+    function code() {
+      nocode = document.getElementById('text1').value;
+      code = '';
+      for (i = 0; i < nocode.length; i++) {
+        code = code + ' ' + codeletter(nocode[i]) + ' / ';
+      }
+
+      document.getElementById('text2').value = code;
+
+
+      zz = codeletter('f');
+     
+    }
+    
+    function decode() { 
+    z = document.getElementById('text2').value;
+    document.getElementById('text1').value = z;
+    }
+    
+    function codeletter(let) {
+      index = letters.indexOf(let);
+      return mors_codes[index];
+    }
+
+  </script>
+</head>
+
+  <body style="margin: 5%;">
+    <input type="text" name="text1" value="zakoduj" id="text1" style="width: 100%;"> 
+    <br>
+    <div style="text-align: center; margin: 20px;">
+      <input type="submit" value="code" id="submit1" onclick="code()">
+      <input type="submit" value="decode" id="sumbit2" onclick="decode()">
+    </div>
+    <input type="text" name="text2" value=" " id="text2" style="width: 100%;">
+  </body>
+</html>
